@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-мессенджер</title>
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div id="login" class="centered">
+    <h2>Введите имя пользователя</h2>
+    <input id="usernameInput" placeholder="Ваше имя">
+    <button id="loginBtn">Войти</button>
+</div>
+<div id="chat" class="hidden">
+    <aside class="sidebar">
+        <h3>Онлайн</h3>
+        <ul id="usersList"><li class="empty">Пользователей нет</li></ul>
+    </aside>
+    <section class="main">
+        <header class="chat-header">
+            <h2 id="chatWith">Выберите собеседника</h2>
+        </header>
+        <div id="messages" class="messages">
+            <div class="empty">История пуста</div>
+        </div>
+        <footer class="input-area">
+            <input id="messageInput" placeholder="Написать сообщение..." disabled>
+            <button id="sendBtn" disabled>Отправить</button>
+        </footer>
+    </section>
+</div>
+<script src="/static/js/app.js"></script>
+</body>
+</html>
